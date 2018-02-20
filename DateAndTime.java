@@ -4,11 +4,11 @@ import java.text.SimpleDateFormat;
 import java.text.ParseException;
 import java.util.Date;
 
-class CalculateAge {
+class ComparingDates {
 	Date dob;
 	Date now;
 	
-	CalculateAge(String DOB)
+	ComparingDates(String DOB)
 	{
 		try{
 			this.now = new Date();
@@ -53,7 +53,7 @@ public class DateAndTime {
 	  SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat); //Date format string is passed as an argument to the Date format object
 	  System.out.println(objSDF.format(today)); //Date formatting is applied to the current date
 
-	  CalculateAge dateCalculator = new CalculateAge("25-09-1976");
+	  ComparingDates dateCalculator = new ComparingDates("25-09-1976");
 	  try {
 		dateCalculator.calculate();
 	} catch (ParseException e) {
